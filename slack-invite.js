@@ -25,7 +25,7 @@ module.exports = function(ctx, req, res) {
     // Configure routing
 
     if (req.method === 'GET') {
-        var hl = JSON.stringify(res.headers);
+        var hl = JSON.stringify(req.headers);
         return handle_get_invite(hl);
     } else if (req.method === 'POST') {
         if (typeof ctx.body.email !== 'string' || !ctx.body.email.trim().match(/[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}/i))
@@ -218,8 +218,17 @@ function slack_invite() {
             <img class="user-logo" src="<%- ctx.secrets.LOGO_URL || logo_url %>" width="100" heigth="100">
         </header>
         <div class="container">
+
             <div class=" col-md-6 col-md-offset-3 text-center">
+
                 <h2>Join <span><%= ctx.secrets.SLACK_ORG %></span> on Slack</h2>
+                <ul>
+                <li>Worldwide community of freelance Translators, Proofreaders, Editors.</li>
+                <li>Built around the Slack ecosystem which can be run in the browser, on your phone or as a dektop app</li>
+                <li>Get quick translations/feedback from professionals in your language direction</li>
+                <li>Make quick and easy payments via paypal and our own Bitcoin/Ethereum app!</li>
+                </ul>
+                <hr />
                 <p>Enter your e-mail below to receive an invitation:</p>
                 <form method="POST">
                   <div class="form-group">
@@ -228,18 +237,7 @@ function slack_invite() {
                   <button type="submit" class="button-invitation">Get invitation</button>
                 </form>
             </div>
-            <div class=" col-md-6 col-md-offset-3 text-center">
-            <p> DEBUG:::
-                <%- hl %>
-                </p>
-                <h2>Join <span><%= ctx.secrets.SLACK_ORG %></span> on Slack</h2>
-                <p>Why join?</p>
-                <ul>
-                <li>Worldwide community of freelance Translators, Proofreaders, Editors.</li>
-                <li>Built around the Slack ecosystem which can be run in the browser, on your phone or as a dektop app</li>
-                <li>Get quick translations/feedback from professionals in your language direction</li>
-                <li>Make quick and easy payments via paypal and our own Bitcoin/Ethereum app!</li>
-                </ul>
+
             </div>
         </div>
 
