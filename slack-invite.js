@@ -515,7 +515,7 @@ function slack_invite() {
             border-radius: 50%;
             box-shadow: 0px 2px 4px 0px #D0D2D3;
             position: absolute;
-            margin-left: 75px;
+            margin-left: 90px;
         }
         
         .slack-logo {
@@ -653,25 +653,25 @@ function slack_invite() {
         <div class="row team">
             <div class="col-md-3 col-sm-6">
                 <div class="team-member">
-                    <img src="https://github.com/identicons/codervince.png" class="img-responsive" width="100" height="100" >
+                    <img src="https://github.com/identicons/codervince.png" class="img-responsive" >
                     <h6>@deutschenglisch</h6>
                 </div>
             </div>
             <div class="col-md-3 col-sm-6">
                 <div class="team-member">
-                    <img src="https://github.com/identicons/a.png" class="img-responsive" width="70" height="70" >
+                    <img src="https://github.com/identicons/a.png" class="img-responsive" >
                     <h6>Sign Up and You Could Be Here!</h6>
                 </div>
             </div>
             <div class="col-md-3 col-sm-6">
                 <div class="team-member">
-                    <img src="https://github.com/identicons/b.png" class="img-responsive" width="90" height="90" >
+                    <img src="https://github.com/identicons/b.png" class="img-responsive" >
                     <h6>Sign Up and You Could Be Here!</h6>
                 </div>
             </div>
             <div class="col-md-3 col-sm-6">
                 <div class="team-member">
-                    <img src="https://github.com/identicons/d.png" class="img-responsive" width="120" height="120" >
+                    <img src="https://github.com/identicons/d.png" class="img-responsive"  >
                     <h6>Sign Up and You Could Be Here!</h6>
                 </div>
             </div>
