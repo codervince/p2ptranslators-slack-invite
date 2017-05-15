@@ -100,9 +100,12 @@ function slack_invite() {
                 margin-bottom: 70px;
             }
             .container {
-                background-color: #ee4646; //red
+                background-color: #00008B; //blue
             }
-             .container2 {
+             .emailsubmit {
+                background-color: #B0E0E6; //powder blue
+            }
+            .features {
                 background-color: #ffe700; //yellow
             }
             .header-image .image{
@@ -218,31 +221,31 @@ function slack_invite() {
             <img class="user-logo" src="<%- ctx.secrets.LOGO_URL || logo_url %>" width="100" heigth="100">
         </header>
         <div class="container">
-
-            <div class=" col-md-6 col-md-offset-3 text-center">
-
                 <h2>Join <span><%= ctx.secrets.SLACK_ORG %></span> on Slack</h2>
-                <ul>
-                <li>Worldwide community of freelance Translators, Proofreaders, Editors.</li>
-                <li>Built around the Slack ecosystem which can be run in the browser, on your phone or as a dektop app</li>
-                <li>Get quick translations/feedback from professionals in your language direction</li>
-                <li>Make quick and easy payments via paypal and our own Bitcoin/Ethereum app!</li>
-                </ul>
+                <h4>Get quick answers to translation/terminology problems from professionals in your working languages</h4>
+                <div class="features">
+                    <ul>
+                        <li>Worldwide community of freelance Translators, Proofreader && Editors.</li>
+                        <li>Built around the Slack ecosystem which can be run in the browser, phone or desktop app</li>
+                        <li>Get quick translations/feedback from professionals in your language directions</li>
+                        <li>Make quick and easy payments via paypal and our own cryptopay app!</li>
+                    </ul>
+                </div> <!-- features --!>
                 <hr />
-                <p>Enter your e-mail below to receive an invitation:</p>
+                <div class="emailsubmit">
+                <p>Enter your email below to receive an invitation:</p>
                 <form method="POST">
-                  <div class="form-group">
-                    <input type="email" class="form-control input-email" name="email" placeholder="foo@example.com" required>
-                  </div>
-                  <button type="submit" class="button-invitation">Get invitation</button>
+                    <div class="form-group">
+                        <input type="email" class="form-control input-email" name="email" placeholder="foo@example.com" required>
+                    </div>
+                    <button type="submit" class="button-invitation">Get invitation</button>
                 </form>
-            </div>
-
-            </div>
+                </div>
         </div>
 
         <div class="footer">
-            <div class="separator-line"></div>
+            <div class="separator-line">
+            </div>
             <div class="col-md-4 col-md-offset-4 text-center footer-copy">
                 <p class="webtask-copy">Powered by &nbsp;<a href="https://webtask.io">
                 <img src="https://webtask.io/images/symbol.svg" alt="Webtasks" width="30px" height="30px">&nbsp; Auth0 Webtasks</a></p>
