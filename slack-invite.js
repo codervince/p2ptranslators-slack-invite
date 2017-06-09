@@ -90,7 +90,8 @@ function slack_invite() {
         <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,user-scalable=no">
         <link href="https://fonts.googleapis.com/css?family=Titillium+Web|Ubuntu" rel="stylesheet">
  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
-    <style>
+    
+        <style>
     
         a {
             color: #000;
@@ -595,7 +596,7 @@ function slack_invite() {
                         <h4>Need a quick translation?</h4>
                         <h4>Stuck on some specialist technology?</h4>
                         <div class="divider"></div>
-                        <h1>CONNECT WITH LANGUAGE PROFESSIONALS IN REAL TIME</h1>
+                        <h1>WORK WITH LANGUAGE PROFESSIONALS IN REAL TIME</h1>
                         <div class="emailsubmit">
                             <h2>Join <span><%= ctx.secrets.SLACK_ORG %></span> on Slack</h2>
                             <img src="https://cdn.auth0.com/website/webtask/assets/slack-webtask-logo.png" alt="Slack" class="slack-logo" width="50px" height="50px">
@@ -617,10 +618,10 @@ function slack_invite() {
             <div class="row">
                 <!--<div class="col-md-6 section-text">-->
                 <div class="col-md-8 col-md-offset-2">
-                    <div class="title title-left">
+                    <div class="title">
                         <h2>The Concept</h2>
                         <h6>No more jumping hoops</h6>
-                        <div class="divider divider-sm"></div>
+                        <div class="divider divider-lg"></div>
                     </div>
                     <p>Sometimes you just need a quick answer to a translation or terminology query during your work day.
                         <a href="https://slack.com">Slack</a> brings all your communication together in one place. It's real-time messaging, archiving and search for modern teams.

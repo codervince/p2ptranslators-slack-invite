@@ -4,5 +4,10 @@
 
 Design
 * center layout
-* padding images
+* maybe move slack image
 
+Function
+* get hard copy of logo
+* add new languages!!!! DE ZH FR ES 
+
+DONE 
